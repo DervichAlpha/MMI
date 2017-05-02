@@ -125,6 +125,7 @@ namespace MMI
                 timer_count.Interval = 65000;
                 waitCursorFunction(1);
                 refreshValue();
+                counter = 0;
                 timer_loop.Start();
             }
         }
@@ -158,21 +159,20 @@ namespace MMI
                     {
                         elm.InvokeMember("click");
                         statutProcess = 2;
+                        progressBar1.Visible = true;
+                        progressBar1.Value++;
                     }
                 }
                 
-                counter++;
-                progressBar1.Visible = true;
-                progressBar1.Value = counter;
             }
             else if(statutProcess == 2)
             {
                 if (webBrowser1.Document.GetElementsByTagName("pre").Count > 0)
                 {
                     statutProcess = 3;
+                    progressBar1.Value++;
                 }
-                counter++;
-                progressBar1.Value = counter;
+                
             }
             else if (statutProcess == 3)
             {
@@ -180,7 +180,11 @@ namespace MMI
                 lastTreatment();
             }
 
-            if(counter>= 60)
+            if(counter < 60)
+            {
+                counter++;
+            }
+            else if (counter >=60)
             {
                 counter = 0;
                 initializeApp();
@@ -279,6 +283,7 @@ namespace MMI
                 {
                     waitCursorFunction(1);
                     refreshValue();
+                    counter = 0;
                     timer_loop.Start();
                     nbrOfRepeat--;
                 }
@@ -292,6 +297,7 @@ namespace MMI
             {
                 if ((int.Parse(ENleft) - int.Parse(txtB_ENConsume.Text) >= 0)){
                     refreshValue();
+                        counter = 0;
                     timer_loop.Start();
                 }
                 else

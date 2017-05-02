@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.txtB_IdGoogl = new System.Windows.Forms.TextBox();
             this.txtB_IdFacebook = new System.Windows.Forms.TextBox();
             this.rTxtB_FacebookToken = new System.Windows.Forms.RichTextBox();
@@ -59,7 +60,9 @@
             // 
             // txtB_IdGoogl
             // 
+            this.txtB_IdGoogl.BackColor = System.Drawing.Color.MidnightBlue;
             this.txtB_IdGoogl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtB_IdGoogl.ForeColor = System.Drawing.Color.White;
             this.txtB_IdGoogl.Location = new System.Drawing.Point(131, 42);
             this.txtB_IdGoogl.Name = "txtB_IdGoogl";
             this.txtB_IdGoogl.Size = new System.Drawing.Size(224, 20);
@@ -68,7 +71,9 @@
             // 
             // txtB_IdFacebook
             // 
+            this.txtB_IdFacebook.BackColor = System.Drawing.Color.MidnightBlue;
             this.txtB_IdFacebook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtB_IdFacebook.ForeColor = System.Drawing.Color.White;
             this.txtB_IdFacebook.Location = new System.Drawing.Point(131, 68);
             this.txtB_IdFacebook.Name = "txtB_IdFacebook";
             this.txtB_IdFacebook.Size = new System.Drawing.Size(224, 20);
@@ -77,8 +82,10 @@
             // 
             // rTxtB_FacebookToken
             // 
+            this.rTxtB_FacebookToken.BackColor = System.Drawing.Color.MidnightBlue;
             this.rTxtB_FacebookToken.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rTxtB_FacebookToken.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rTxtB_FacebookToken.ForeColor = System.Drawing.Color.White;
             this.rTxtB_FacebookToken.Location = new System.Drawing.Point(131, 94);
             this.rTxtB_FacebookToken.Name = "rTxtB_FacebookToken";
             this.rTxtB_FacebookToken.Size = new System.Drawing.Size(224, 89);
@@ -88,6 +95,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 13);
@@ -97,6 +106,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 13);
@@ -106,6 +117,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 13);
@@ -115,6 +128,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(373, 44);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 13);
@@ -123,9 +138,10 @@
             // 
             // rTxtB_MissionResult
             // 
-            this.rTxtB_MissionResult.BackColor = System.Drawing.SystemColors.Control;
+            this.rTxtB_MissionResult.BackColor = System.Drawing.Color.MidnightBlue;
             this.rTxtB_MissionResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rTxtB_MissionResult.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rTxtB_MissionResult.ForeColor = System.Drawing.Color.White;
             this.rTxtB_MissionResult.Location = new System.Drawing.Point(376, 94);
             this.rTxtB_MissionResult.Name = "rTxtB_MissionResult";
             this.rTxtB_MissionResult.Size = new System.Drawing.Size(265, 89);
@@ -135,6 +151,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(373, 78);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 13);
@@ -143,7 +161,9 @@
             // 
             // txtB_IdMission
             // 
+            this.txtB_IdMission.BackColor = System.Drawing.Color.MidnightBlue;
             this.txtB_IdMission.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtB_IdMission.ForeColor = System.Drawing.Color.White;
             this.txtB_IdMission.Location = new System.Drawing.Point(421, 42);
             this.txtB_IdMission.Name = "txtB_IdMission";
             this.txtB_IdMission.Size = new System.Drawing.Size(220, 20);
@@ -183,6 +203,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(12, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 13);
@@ -192,12 +214,14 @@
             // chkB_loop
             // 
             this.chkB_loop.AutoSize = true;
+            this.chkB_loop.BackColor = System.Drawing.Color.Transparent;
+            this.chkB_loop.ForeColor = System.Drawing.Color.White;
             this.chkB_loop.Location = new System.Drawing.Point(191, 192);
             this.chkB_loop.Name = "chkB_loop";
             this.chkB_loop.Size = new System.Drawing.Size(50, 17);
             this.chkB_loop.TabIndex = 16;
             this.chkB_loop.Text = "Loop";
-            this.chkB_loop.UseVisualStyleBackColor = true;
+            this.chkB_loop.UseVisualStyleBackColor = false;
             this.chkB_loop.CheckedChanged += new System.EventHandler(this.chkB_loop_CheckedChanged);
             // 
             // webBrowser1
@@ -236,6 +260,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(12, 257);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 13);
@@ -254,17 +280,21 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.ForeColor = System.Drawing.Color.White;
             this.checkBox1.Location = new System.Drawing.Point(191, 218);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(56, 17);
             this.checkBox1.TabIndex = 24;
             this.checkBox1.Text = "repeat";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(12, 217);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 13);
@@ -284,7 +314,9 @@
             // label_timeleft
             // 
             this.label_timeleft.AutoSize = true;
-            this.label_timeleft.Location = new System.Drawing.Point(273, 191);
+            this.label_timeleft.BackColor = System.Drawing.Color.Transparent;
+            this.label_timeleft.ForeColor = System.Drawing.Color.Red;
+            this.label_timeleft.Location = new System.Drawing.Point(279, 193);
             this.label_timeleft.Name = "label_timeleft";
             this.label_timeleft.Size = new System.Drawing.Size(76, 13);
             this.label_timeleft.TabIndex = 25;
@@ -295,10 +327,13 @@
             this.timer_count.Interval = 65000;
             this.timer_count.Tick += new System.EventHandler(this.timer_count_Tick);
             // 
-            // Form1
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(645, 321);
             this.Controls.Add(this.label_timeleft);
             this.Controls.Add(this.checkBox1);
@@ -324,9 +359,10 @@
             this.Controls.Add(this.txtB_IdFacebook);
             this.Controls.Add(this.txtB_IdGoogl);
             this.Controls.Add(this.webBrowser1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
-            this.Name = "Form1";
+            this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mila\'s bot Interface @by Dervich ^^";
             this.Load += new System.EventHandler(this.Form1_Load);
